@@ -12,7 +12,7 @@ class Solution {
                 a = a/10;
                 num = ( num * 10) + c;
             }
-            store.add(num);
+            if(!store.contains(num)) store.add(num);
         }
         return store.size();
     }
